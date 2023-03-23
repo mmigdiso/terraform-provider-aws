@@ -103,6 +103,11 @@ func ResourceInstanceGroup() *schema.Resource {
 							ForceNew: true,
 							Default:  1,
 						},
+						"throughput": { 
+							Type:      schema.TypeInt, 
+							Optional: true, 
+							ForceNew: true, 
+						}						
 					},
 				},
 				Set: resourceClusterEBSHashConfig,
